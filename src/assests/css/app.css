@@ -31,3 +31,11 @@ body {
 html * {
     font-size: 16px;
 }
+
+h1 {
+    font-size: 1.625em;
+}
+  
+h2 {
+    font-size: 1.25em;
+}

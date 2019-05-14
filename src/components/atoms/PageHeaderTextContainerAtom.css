@@ -1,0 +1,8 @@
+.page-header-text-container-atom {
+    width: 100%;
+    background: var(--primary);
+}
+
+.page-header-text-container-atom__text{
+    padding: 16px 0px 8px 0px;
+}

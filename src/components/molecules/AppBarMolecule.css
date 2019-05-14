@@ -1,0 +1,13 @@
+.app-bar-molecule {
+    background: var(--primary);
+    margin-bottom: 16px;
+}
+
+.app-bar-molecule__tabs{
+    display: flex;
+}
+
+.app-bar-molecule__tabs__tab-atom{
+    flex-grow: 1;
+    flex-basis: 50%;
+}
