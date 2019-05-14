@@ -1,0 +1,9 @@
+.action-buttons-footer-container-molecule{
+    display: flex; 
+    justify-content: flex-end;
+    margin: 0px 16px 16px 16px;
+}
+
+.action-buttons-footer-container-molecule__clear-selected-button {
+    margin-left: 16px;
+}

@@ -1,0 +1,33 @@
+:root {
+    --primary: #00e676;
+    --primary-dark: #00b248;
+    --primary-light: #66ffa6;
+    
+    --secondary: #0336ff;
+    --secondary-light:#6f63ff;
+    --secondary-dark: #0008ca;
+
+    --primary-black: #000000;
+    --primary-White: #FFFFFF;
+    --primary-red: #B00020;
+    --primary-gray-light: #eeeeee;
+    --primary-gray-dark: #bdbdbd;
+}
+
+html, body, #root {
+    height: 100%; 
+    width:100%
+}
+
+#root {
+    background: var(--primary-gray-light);
+    color: var(--primary-black);
+}
+
+body {
+    line-height: 1;
+}
+
+html * {
+    font-size: 16px;
+}

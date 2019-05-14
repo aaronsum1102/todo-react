@@ -1,3 +1,6 @@
+@import "./assests/css/app.css";
+@import "./assests/css/reset.css";
+
 .App {
   text-align: center;
 }
