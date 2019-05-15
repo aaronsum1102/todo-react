@@ -1,0 +1,7 @@
+.todo-list-organism{
+    margin: 0px 16px 16px 16px;
+}
+
+.todo-list-organism__todo-item:not(:last-child){
+    margin-bottom: 16px;
+}
