@@ -5,3 +5,7 @@
 .todo-list-organism__todo-item:not(:last-child){
     margin-bottom: 16px;
 }
+
+.todo-list-organism__add-todo-item-molecule {
+    width: 100%;
+}

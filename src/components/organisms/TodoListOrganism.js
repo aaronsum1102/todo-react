@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import "./TodoListOrganism.css"
 import CheckBoxMolecule from "../molecules/CheckBoxMolecule"
+import AddTodoItemMolecule from "../molecules/AddTodoItemMolecule"
 
 class TodoListOrganism extends React.Component {
     constructor(props) {
@@ -30,6 +31,7 @@ class TodoListOrganism extends React.Component {
         })
         return <div className="todo-list-organism">
             {todoList}
+            <AddTodoItemMolecule className="todo-list-organism__add-todo-item-molecule" />
         </div>
     }
 }

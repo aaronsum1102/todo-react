@@ -1,0 +1,17 @@
+.add-todo-item-molecule{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    line-height: 24px;
+}
+
+.add-todo-item-molecule svg {
+    height: 24px;
+    width: 24px;
+    padding: 5px;
+}
+
+.add-todo-item-moelcule__input-atom.input-atom {
+    margin-left: 8px;
+
+}
