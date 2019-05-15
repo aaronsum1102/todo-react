@@ -26,6 +26,9 @@ class InputAtom extends React.Component {
     onConfirm(event) {
         if (this.inputRef.current.focus && this.state.value && event.key === "Enter") {
             this.props.onSubmitTodoItem(this.state.value)
+            this.setState({
+                value: ""
+            })
             this.inputRef.current.focus()
         }
     }

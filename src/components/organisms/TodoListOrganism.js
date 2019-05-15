@@ -5,35 +5,28 @@ import CheckBoxMolecule from "../molecules/CheckBoxMolecule"
 import AddTodoItemMolecule from "../molecules/AddTodoItemMolecule"
 
 class TodoListOrganism extends React.Component {
-    constructor(props) {
-        super(props)
-        this.onCheckButtonClicked = this.onCheckButtonClicked.bind(this)
-        this.state = {
-            todos: [{
-                value: "hellow world",
-                isChecked: false
-            }, { value: "work load 1", isChecked: false }]
-        }
-    }
-
-    onCheckButtonClicked(value) {
-        let index = this.state.todos.findIndex(todoObj => todoObj.value === value)
-        let updatedTodos = this.state.todos.concat()
-        updatedTodos[index].isChecked = !updatedTodos[index].isChecked
-        this.setState({
-            todos: updatedTodos
-        })
-    }
-
     render() {
-        let todoList = this.state.todos.map(todoObj => todoObj.value).map((todo) => {
-            return <CheckBoxMolecule className="todo-list-organism__todo-item" key={todo} checkBoxText={todo} onCheckButtonClicked={this.onCheckButtonClicked} />
+        let todoList = this.props.todos.map((todo) => {
+            return <CheckBoxMolecule
+                className="todo-list-organism__todo-item"
+                key={todo.value}
+                checkBoxText={todo.value}
+                isSelected={todo.isChecked}
+                onCheckButtonClicked={this.props.onCheckButtonClicked} />
         })
         return <div className="todo-list-organism">
             {todoList}
-            <AddTodoItemMolecule className="todo-list-organism__add-todo-item-molecule" />
+            <AddTodoItemMolecule
+                className="todo-list-organism__add-todo-item-molecule"
+                onSubmitTodoItem={this.props.onSubmitTodoItem} />
         </div>
     }
+}
+
+TodoListOrganism.propTypes = {
+    onCheckButtonClicked: PropTypes.func,
+    todos: PropTypes.array,
+    onSubmitTodoItem: PropTypes.func,
 }
 
 export default TodoListOrganism;

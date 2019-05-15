@@ -12,9 +12,10 @@ class CheckBoxMolecule extends React.Component {
         return this.props.onCheckButtonClicked(this.props.checkBoxText)
     }
 
+
     render() {
         return <label className={`check-box-molecule ${this.props.className}`}>{this.props.checkBoxText}
-            <input type="checkbox" onClick={this.onChecked} />
+            <input type="checkbox" checked={this.props.isSelected} onClick={this.onChecked} readOnly={true} />
             <span className="check-box-molecule__check-mark" />
         </label>
     }
@@ -23,7 +24,8 @@ class CheckBoxMolecule extends React.Component {
 CheckBoxMolecule.propTypes = {
     checkBoxText: PropTypes.string,
     onCheckButtonClicked: PropTypes.func,
-    className: PropTypes.string
+    className: PropTypes.string,
+    isSelected: PropTypes.bool
 }
 
 export default CheckBoxMolecule;

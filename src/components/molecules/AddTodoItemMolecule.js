@@ -8,13 +8,18 @@ class AddTodoItemMolecule extends React.Component {
     render() {
         return <div className={`add-todo-item-molecule ${this.props.className}`}>
             <FontAwesomeIcon icon="plus"></FontAwesomeIcon>
-            <InputAtom className="add-todo-item-moelcule__input-atom" placeHolderText="write a new task here..."></InputAtom>
+            <InputAtom
+                className="add-todo-item-moelcule__input-atom"
+                placeHolderText="write a new task here..."
+                onSubmitTodoItem={this.props.onSubmitTodoItem}
+            ></InputAtom>
         </div>
     }
 }
 
 AddTodoItemMolecule.propTypes = {
-    className: PropTypes.string
+    className: PropTypes.string,
+    onSubmitTodoItem: PropTypes.func,
 }
 
 export default AddTodoItemMolecule;
