@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./ButtonAtom.css"
 
-class ButtonAtom extends React.Component {
+class ButtonAtom extends React.PureComponent {
     getButtonClass() {
         let result = ["button-atom"]
         if (this.props.isDisabled) {
@@ -27,6 +27,7 @@ class ButtonAtom extends React.Component {
     }
 
     render() {
+        console.log("object");
         const onClick = this.props.isDisabled ? null : this.props.onClick
         let icon
         if (this.props.iconName) {

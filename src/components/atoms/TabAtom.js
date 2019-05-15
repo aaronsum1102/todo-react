@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./TabAtom.css"
 
-class TabAtom extends React.Component {
+class TabAtom extends React.PureComponent {
     constructor(props) {
         super(props)
         this.onClick = this.onClick.bind(this)
