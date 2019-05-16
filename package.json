@@ -6,11 +6,14 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-solid-svg-icons": "^5.8.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "add": "^2.0.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
-    "yarn": "^1.16.0"
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "yarn": "^1.16.0",
+    "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

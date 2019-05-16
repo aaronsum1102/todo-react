@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import fontAwesomeConfig from "./font-awesome-config"
-import TodoView from "./components/views/TodoView"
+import TodoViewContainer from "./containers/TodoViewContainer"
 
 fontAwesomeConfig()
 
 function App() {
   return (
     <div className="App">
-      <TodoView />
+      <TodoViewContainer />
     </div>
   );
 }
